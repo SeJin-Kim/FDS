@@ -1,0 +1,168 @@
+body {
+	background: #dfdfdf;
+}
+
+.catalog {
+	width: 720px;
+	height: 480px;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item-01 {
+	width: 720px;
+	height: 120px;
+}
+
+.product-info {
+	float: left;
+	height: 120px;
+}
+
+.product-photo {
+	float: left;
+}
+
+.text-info {
+	width: 210px;
+	padding: 30px 0 0 30px;
+	float: left;
+}
+
+.product-title {
+	width: 160px;
+	font-family: 'Varela Round';
+	font-size: 0.75rem;
+	color: #222;
+}
+
+.kategorie-name {
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-size: 0.75rem;
+	color: #b8b8b8;
+	margin-top: 16px;
+}
+
+.price-info {
+	width: 120px;
+	height: 120px;
+	float: left;
+	position: relative;
+
+}
+
+.price {
+	font-family: 'Oswald';
+	font-weight: 700;
+	font-size: 0.875rem;
+	color: #222;
+	padding: 38px 0 0 20px;
+}
+
+.sale {
+	color: #ff3f2b;
+}
+
+.sale-price {
+	font-family: 'Oswald';
+	font-weight: 700;
+	font-size: 0.5625rem;
+	color: #a1a1a1;
+	text-decoration: line-through;
+	position: absolute;
+	top: 77px;
+	left: 61px;
+}
+
+.price-icon {
+	padding: 14px 0 0 20px;
+}
+
+.cart {
+	/*width: 240px;*/
+	height: 120px;
+	float: left;
+	position: relative;
+}
+
+.cart select {
+	/* 네이티브 외형 감추기 */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 90px;
+	height: 30px;
+	border: 0;
+	border-radius: 15px;
+	padding-left: 2em;
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-size: 0.75rem;
+	color: #868686;
+	background: url(../images/icon/list-arrow.png) no-repeat 70px 13px;
+	background-color: #f6f6f6;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	}
+
+
+
+.add-cart-btn {
+  width: 110px;
+  height: 30px;
+  background: #1f4ba5;
+  border: 0;
+  border-radius: 15px;
+  font-family: 'Varela Round';
+  font-size: 0.75rem;
+  color: #fff;
+  line-height: 30px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.add-wishlist a {
+	width: 100px;
+	text-decoration: none;
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-size: 0.75rem;
+	color: #b8b8b8;
+	padding-left: 1.5em;
+	position: absolute;
+	top: 75px;
+	left: 0;
+}
+
+.added-wishlist a {
+	width: 100px;
+	text-decoration: none;
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-size: 0.75rem;
+	color: #b8b8b8;
+	padding-left: 1.5em;
+	position: absolute;
+	top: 75px;
+	left: 0;
+}
+
+.add-wishlist a[title^="add"] {
+	background: url("../images/icon/icon-add-wishlist.png") no-repeat;
+	}
+
+.added-wishlist a[title^="add"] {
+	background: url("../images/icon/icon-added-wishlist.png") no-repeat;
+	}
+
+	.item-02, .item-03, .item-04 {
+		width: 720px;
+		height: 120px;
+		background: #fff;
+		border-top: 1px solid #ececec;
+	}

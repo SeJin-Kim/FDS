@@ -1,0 +1,138 @@
+body {
+  background: #dfdfdf;
+}
+
+button {
+  cursor: pointer;
+}
+
+.login {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 360px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Varela Round';
+  /*font-size: 18px;*/
+  font-size: 1.125rem;
+  padding-top: 36px;
+  margin: 0;
+}
+
+.close-btn {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 20px;
+  right: 20px;
+  border: 0;
+  padding: 0;
+  background: #fff;
+  /*background: url(../images/icon-close.png) no-repeat;*/
+}
+
+fieldset {
+  margin: 25px 0 0 0;
+  border: 0;
+  padding: 0;
+
+}
+
+
+.input-id input,
+.input-pw input {
+  box-sizing: border-box;
+  width: 240px;
+  height: 30px;
+  background: #f6f6f6;
+  border: 0;
+  padding-left: 20px;
+  border-radius: 15px;
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-size: 0.75rem;
+  color: #868686;
+}
+
+.input-pw {
+  margin-top: 10px;
+}
+
+.login-btn {
+  width: 110px;
+  height: 30px;
+  background: #1f4ba5;
+  border: 0;
+  border-radius: 15px;
+  font-family: 'Varela Round';
+  font-size: 0.75rem;
+  color: #fff;
+  line-height: 30px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social {
+  margin-top: 25px;
+}
+
+.text {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-size: 0.75rem;
+  color: #868686;
+}
+
+.facebook {
+  width: 111px;
+  height: 26px;
+  border: 2px solid #215b9a;
+  background: #fff;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+  line-height: 30px;
+}
+
+.twitter {
+  width: 111px;
+  height: 26px;
+  border: 2px solid #00adf2;
+  background: #fff;
+  border-radius: 15px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.link {
+  height: 50px;
+  border-top: 1px solid #ececec;
+  margin-top: 28px;
+  line-height: 50px;
+}
+
+.signup,
+.fogot-pw {
+  font-family: 'Varela Round';
+  font-size: 0.75rem;
+  color: #1f4ba5;
+  border: 0;
+  padding: 0;
+  background: #fff;
+  padding: 15px;
+}
+
+.readable-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px;
+}

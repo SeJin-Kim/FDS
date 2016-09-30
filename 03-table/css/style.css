@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+.blue {
+  background: #3498db;
+}
+
+.purple {
+  background: #9b59b6;
+}
+
+.navy {
+  background: #34495e;
+}
+
+.green {
+  background: #2ecc71;
+}
+
+.red {
+  background: #e74c3c;
+}
+
+.orange {
+  background: #f39c12;
+}
+
+.cs335, .cs426, .md303, .md352, .md313, .cs240 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+body {
+  background: #cecece;
+  padding: 20px;
+}
+
+
+table {
+  font-family: 'Open Sans';
+  color: #efefef;
+}
+table tr:nth-child(2n) {
+  background: #eff0f1;
+}
+
+table th, table td {
+  padding: 1em;
+  width: 10em;
+}
+
+.days, .time {
+  background: #34495e;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+.time {
+  width: 3em }

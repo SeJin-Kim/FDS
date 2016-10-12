@@ -1,0 +1,838 @@
+/*공통모듈*/
+
+/*가로세로 가운데 정렬*/
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*float속성을 해제*/
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*읽기는 가능하지만 보이지는 않는 컨텐츠*/
+.readable-hidden {
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+}
+
+/**
+ * --------------------------------
+ * Module: Row
+ * ----------------------------- */
+ .clearfix::after,
+ .row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.lt-ie8 .row { zoom: 1; }
+
+/**
+ * --------------------------------
+ * Module: Column
+ * ----------------------------- */
+ [class*="col-"] {
+  float: left;
+}
+
+.col-1 { width: 120px; }
+.col-2 { width: 240px; }
+.col-3 { width: 360px; }
+.col-4 { width: 480px; }
+.col-5 { width: 600px; }
+.col-6 { width: 720px; }
+.col-7 { width: 840px; }
+.col-8 { width: 960px; }
+
+a:link{color: #222;}
+a:visited{color: #222;}
+a:hover{color: #222;}
+a:active{color: #222;}
+
+html {
+	font-size: 10px;
+  color: #222;
+}
+
+body {
+	background: #ddd;
+	margin: 0;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+}
+.container[class*="show-"] {
+  position: relative;
+}
+.container[class*="show-"]::before {
+  content:'';
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  min-height: 300vh;
+  width: 100%;
+}
+.container.show-grid::before {
+  background-image: linear-gradient(180deg, transparent 9px, #7400ff 9px), linear-gradient(90deg, hsla(237, 100%, 66%, 0.3), hsla(239, 100%, 79%, 0.3));
+  background-size: 1px 10px, 120px 1px;
+}
+
+.btn-hamberger {
+	width: 13px;
+	height: 13px;
+	background: url(../images/aware-icon.png) no-repeat;
+	background-position: -116px -15px;
+	margin: 34px 30px 33px 30px;
+	text-indent: -9999px;
+	cursor: pointer;
+	float: left;
+}
+
+h1 {
+  width: 97px;
+  height: 20px;
+  background: url(../images/aware-icon.png);
+  background-position: 0 -108px;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin: 30px 0 0 0;
+  float: left;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.666666666666667;
+  color: #1f4ba5;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+nav li {
+	padding-right: 10px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.4rem;
+	margin-top: 31px;
+	margin-right: 34px;
+	text-transform: capitalize;
+	background: url(../images/icon-nav-arrow-down.png) right no-repeat;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+.side-menu {
+	display: flex;
+	margin-top: 32px;
+	margin-left: 60px;
+}
+
+.notice {
+  width: 16px;
+  height: 16px;
+  background: url(../images/aware-icon.png);
+  background-position: -86px -15px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+}
+
+.notice-nember {
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	text-align: center;
+	line-height: 1.6rem;
+	font-size: 0.9rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	background: #1f4ba5;
+	border-radius: 0.8rem;
+	text-indent: 0;
+}
+
+.user {
+  width: 14px;
+  height: 15px;
+  background: url(../images/aware-icon.png);
+  background-position: -102px -15px;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+}
+
+.search {
+  width: 16px;
+  height: 16px;
+  background: url(../images/aware-icon.png);
+  background-position: -129px -15px;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+}
+
+.main-slider {
+  position: relative;
+  width: 720px;
+  height: 480px;
+  background: url(../images/slider/slider-main-content.jpg) no-repeat;
+}
+
+.text {
+  position: absolute;
+  width: 247px;
+  top: 120px;
+  left: 121px;
+}
+
+.cate-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1f4ba5;
+}
+
+.main-copy {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.sub-copy {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.6rem;
+  color: #868686;
+}
+.btn-buynow{
+  margin-top: 36px;
+}
+.btn-left {
+  width: 69px;
+  height: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 15px 0 0 15px;
+  border-right: 1px solid #365dae;
+  background: #1f4ba5;
+  float: left;
+}
+
+.btn-right {
+  width: 94px;
+  height: 30px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  background: #1f4ba5;
+  float: left;
+}
+
+.arrow-btn-prev {
+  width: 32px;
+  height: 32px;
+  background: url(../images/aware-icon.png);
+  background-position: -145px -26px;
+  cursor: pointer;
+  position: absolute;
+  top: 224px;
+  left: 30px;
+}
+
+.arrow-btn-next {
+  width: 32px;
+  height: 32px;
+  background: url(../images/aware-icon.png);
+  background-position: 0 -58px;
+  cursor: pointer;
+  position: absolute;
+  top: 224px;
+  right: 30px;
+}
+
+.slider-nav {
+}
+
+.slide-03{
+  position: relative;
+}
+
+.banner-01,
+.banner-02,
+.banner-03 {
+  text-align: center;
+  height: 240px;
+}
+
+.banner-01 {
+  background: url(../images/banners/banners-01.jpg) no-repeat;
+}
+.banner-01 .cate-name {
+  padding-top: 11.6rem;
+}
+
+.banner-01-main-copy {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 14px;
+}
+
+.banner-01-sub-copy {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
+  color: #868686;
+}
+.banner-02 {
+  background: url(../images/banners/banners-02.jpg) no-repeat;
+}
+.banner-02 .cate-name {
+  padding-top: 3.6rem;
+}
+.banner-02-copy ,
+.banner-03-copy {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #222;
+}
+.banner-02-copy {
+  padding-top: 12rem;
+}
+.banner-03 {
+  background: url(../images/banners/banners-03.jpg) no-repeat;
+}
+.banner-03 .cate-name {
+  padding-top: 13.6rem;
+}
+.banner-03-copy {
+  padding-top: 0.9rem;
+}
+.featured-products {
+  background: #fff;
+}
+.featured-products ul,
+.featured-products li,
+.blog ul,
+.blog li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.featured-product-1 {
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.featured-product-2 {
+  width: 238px;
+  height: 240px;
+  text-align: center;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.featured-product-2-1 {
+  width: 239px;
+  height: 240px;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.featured-product-2-2 {
+  width: 239px;
+  height: 120px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.featured-product-2-3 {
+  width: 239px;
+  height: 119px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.section-icon {
+  width: 16px;
+  height: 14px;
+  background: url(../images/aware-icon.png);
+  background-position: -59px 0;
+  display: inline-block;
+  margin-top: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.section-sub-title {
+  margin-top: 2rem;
+}
+
+.product-name {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.2rem;
+  color: #222;
+  display: block;
+  padding-top: 2.6rem;
+  height: 3em;
+}
+
+.price,
+.sale-price {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+  margin-top: 3rem;
+}
+
+.sale-price {
+  color: #ff3f2b;
+}
+
+.tag-hit {
+  width: 29px;
+  height: 15px;
+  background: url(../images/aware-icon.png);
+  background-position: -75px 0;
+  position: absolute;
+  top: 199px;
+  left: 24px;
+}
+
+.tag-sale {
+  width: 34px;
+  height: 15px;
+  background: url(../images/aware-icon.png);
+  background-position: -133px 0;
+  position: absolute;
+  top: 199px;
+  left: 24px;
+}
+
+.original-price {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: #a1a1a1;
+  position: absolute;
+  top: 201px;
+  right: 30px;
+}
+
+.tag-new {
+  width: 29px;
+  height: 15px;
+  background: url(../images/aware-icon.png);
+  background-position: -104px 0;
+  position: absolute;
+  top: 199px;
+  left: 24px;
+}
+
+.section-icon-blog {
+  width: 16px;
+  height: 16px;
+  background: url(../images/aware-icon.png);
+  background-position: -43px 0;
+  display: inline-block;
+  margin-top: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+.blog-date {
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #868686;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-title {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.writer{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #868686;
+}
+
+.writer span {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+}
+
+.blog-title-small {
+  width: 17rem;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+
+}
+
+.blog-wrapper {
+  padding-left: 2.5rem;
+}
+
+.article-wrapper {
+  text-align: center;
+  height: 478px;
+  position: relative;
+}
+
+.testimonials-icon {
+  width: 16px;
+  height: 16px;
+  background: url(../images/aware-icon.png);
+  background-position: -77px -58px;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.btn-reload {
+  width: 30px;
+  height: 30px;
+  background: url(../images/aware-icon.png);
+  background-position: -93px -58px;
+  position: absolute;
+  top: 34px;
+  right: 30px;
+}
+.quote-icon {
+  width: 13px;
+  height: 11px;
+  display: inline-block;
+  margin-bottom: 19px;
+  background: url(../images/aware-icon.png);
+  background-position: -145px -15px;
+}
+
+article h2 {
+  padding-top: 3.3rem;
+  padding-bottom: 3.2rem;
+}
+.quote {
+  width: 41rem;
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 1.666;
+  color: #868686;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+.writer-info {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 14rem;
+  bottom: 8.4rem;
+
+}
+.writer-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: url(../images/testimonials-komal.jpg) no-repeat -6px -6px;
+  float: left;
+}
+
+.writer-name {
+ font-family: 'Varela Round', sans-serif;
+ font-size: 1.4rem;
+ text-align: left;
+ float: left;
+ margin-top: 1.2rem;
+ margin-left: 2rem;
+}
+
+figcaption span {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #b8b8b8;
+}
+
+.briefcase-icon {
+  width: 16px;
+  height: 16px;
+  background: url(../images/aware-icon.png) no-repeat;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.article-date {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
+  color: #868686;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.info-box {
+  width: 480px;
+  height: 120px;
+  background: #000;
+  margin-bottom: 25px;
+}
+
+.quote-small {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 1.714;
+  color: #868686;
+  margin-top: 20px;
+}
+
+.brand {
+  border-top: 1px solid #ececec;
+  height: 120px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brand-box {
+  width: 119px;
+  height: 120px;
+  border-right: 1px solid #ececec;
+  float: left;
+  cursor: pointer;
+}
+
+.brand-box-1 {
+  width: 120px;
+  height: 120px;
+  float: left;
+  cursor: pointer;
+}
+
+
+.hnm {
+  background: url(../images/brand-logo/logo-hnm.png) no-repeat;
+  background-position: center center;
+}
+
+.puma {
+  background: url(../images/brand-logo/logo-puma.png) no-repeat;
+  background-position: center center;
+}
+.adidas {
+  background: url(../images/brand-logo/logo-adidas.png) no-repeat;
+  background-position: center center;
+}
+.converse {
+  background: url(../images/brand-logo/logo-converse.png) no-repeat;
+  background-position: center center;
+}
+.boss {
+  background: url(../images/brand-logo/logo-boss.png) no-repeat;
+  background-position: center center;
+}
+
+.nike {
+  background: url(../images/brand-logo/logo-nike.png) no-repeat;
+  background-position: center center;
+}
+.crown {
+  background: url(../images/brand-logo/logo-crown.png) no-repeat;
+  background-position: center center;
+}
+.counter {
+  text-align: center;
+  background: url(../images/brand-logo/logo-counter.png) no-repeat;
+  background-position: center center;
+}
+.counter a {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #1f4ba5;
+  text-transform: uppercase;
+  /*line-height: 120px;*/
+  text-decoration: none;
+}
+
+footer {
+  background: #222;
+}
+
+.footer-menu {
+  margin: 0;
+  padding-top: 24px;
+  padding-left: 89px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #353535;
+}
+
+.footer-menu li {
+  color: #ececec;
+  float: left;
+  margin-right: 36px;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
+}
+
+.footer-menu li::after {
+  content:'\2022';
+  padding-left: 34px;
+  color: #ececec;
+}
+
+.footer-menu li:last-child::after{
+  margin: 0;
+  padding: 0;
+  content: '';
+}
+
+.copyright {
+  width: 240px;
+  height: 119px;
+  position: relative;
+  text-align: center;
+  border-right: 1px solid #353535;
+}
+
+.aware-dark {
+  width: 97px;
+  height: 20px;
+  background: url(../images/aware-icon.png) no-repeat;
+  display: inline-block;
+  background-position: 0 -128px;
+  margin-top: 26px;
+}
+
+.copyright-text {
+  font-family: "PT Serif", serif;
+  font-size: 1.2rem;
+  color: #7f7f7f;
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.social {
+  height: 59px;
+  border-bottom: 1px solid #353535;
+}
+
+.social li {
+  text-indent: -9999px;
+  float: left;
+  margin: 10px;
+}
+
+.social li:first-child{
+  width: 20px;
+  height: 20px;
+  background: url(../images/sns-icon/icon-sns-twitter.png) no-repeat;
+}
+
+.social li:nth-child(2){
+  width: 20px;
+  height: 20px;
+  background: url(../images/sns-icon/icon-sns-instagram.png) no-repeat;
+}
+
+.social li:nth-child(3){
+  width: 20px;
+  height: 20px;
+  background: url(../images/sns-icon/icon-sns-pinterest.png) no-repeat;
+}
+.social li:nth-child(4){
+  width: 20px;
+  height: 20px;
+  background: url(../images/sns-icon/icon-sns-facebook.png) no-repeat;
+}
+
+
+.payment li {
+  text-indent: -9999px;
+  float: left;
+  margin: 10px;
+}
+
+.payment li:first-child {
+  width: 43px;
+  height: 20px;
+  background: url(../images/logo-payment/icon-pay-visa.png) no-repeat;
+}
+
+.payment li:nth-child(2){
+  width: 34px;
+  height: 20px;
+  background: url(../images/logo-payment/icon-pay-mastercard.png) no-repeat;
+}
+
+.payment li:nth-child(3){
+  width: 58px;
+  height: 20px;
+  background: url(../images/logo-payment/icon-pay-paypal.png) no-repeat;
+}
+
+
+
+
+
+

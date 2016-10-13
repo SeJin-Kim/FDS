@@ -629,7 +629,7 @@ figcaption span {
 .info-box {
   width: 480px;
   height: 120px;
-  background: #000;
+  background: url(../images/info-temp.jpg);
   margin-bottom: 25px;
 }
 
@@ -747,7 +747,7 @@ footer {
 }
 
 .copyright {
-  width: 240px;
+  width: 239px;
   height: 119px;
   position: relative;
   text-align: center;
@@ -777,10 +777,14 @@ footer {
   border-bottom: 1px solid #353535;
 }
 
+.social ul {
+  margin: 0;
+}
+
 .social li {
   text-indent: -9999px;
   float: left;
-  margin: 10px;
+  margin: 20px 10px 0 10px;
 }
 
 .social li:first-child{
@@ -806,7 +810,9 @@ footer {
   background: url(../images/sns-icon/icon-sns-facebook.png) no-repeat;
 }
 
-
+.payment {
+  padding-left: 20px;
+}
 .payment li {
   text-indent: -9999px;
   float: left;
@@ -831,8 +837,57 @@ footer {
   background: url(../images/logo-payment/icon-pay-paypal.png) no-repeat;
 }
 
+.mail {
+  width: 479px;
+  height: 119px;
+  border-right: 1px solid #353535;
+}
 
+.mail input{
+  display: inline-block;
+  background: #353535 url(..//images/icon-footer-mail.png) no-repeat 10% 48%;
+  border: 1px solid #353535;
+  border-radius: 20px 0 0 20px;
+  height: 30px;
+  line-height: 30px;
+  width:275px;
+  color: #888;
+  padding: 0 0 0 55px;
+  font-style: italic;
+}
 
+fieldset {
+  border: none;
+  padding-top: 29px ;
+  padding-left: 59px;
 
+}
 
+fieldset button {
+    background: #353535;
+    border: 1px solid #353535;
+    border-radius: 0 20px 20px 0;
+    margin-left: -6px;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+    padding-right: 10px;
+  background-image: url(../images/icon-footer-arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mail ul {
+  padding-left: 80px;
+}
+
+.mail li {
+  float: left;
+  list-style: none;
+  color: #bcbcbc;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
 

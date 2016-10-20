@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+html {
+	font-size: 10px;
+	font-family: 'Spoqa Han Sans';
+	font-weight: 400;
+	letter-spacing: -0.12em;
+	color: #626161;
+}
+
+p {
+	font-family: 'Spoqa Han Sans';
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 80px;
+	padding-bottom: 122px;
+}
+
+h1 {}
+
+/*ì읽기는 가능하지만 안보이는 컨텐츠 */
+.readable-hidden {
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.product-info {
+	flex-direction: column;
+	padding-bottom: 84px;
+}
+
+.product-info img {
+	padding-bottom: 11px;
+}
+
+.product-number,
+.product-name-en{
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0;
+	color: #3b3b3b;
+	line-height: 1.2;
+}
+
+.product-number {
+	font-size: 1.5rem;
+}
+
+.product-name-en {
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: -0.02em;
+	padding-top: 8px;
+}
+
+.product-name-kr {
+	font-size: 2.4rem;
+	color: #3b3b3b;
+	padding-top: 6px;
+	letter-spacing: -0.13em;
+}
+
+.collection {
+	flex-direction: column;
+	background: #fbfbfb;
+	padding-bottom: 32px;
+}
+
+.collection-name {
+	font-family: 'Flamenco', cursive;
+	font-size: 6rem;
+	text-transform: capitalize;
+	letter-spacing: -0.01em;
+	color: #5c5c5c;
+	/* padding: 0; */
+	padding-top: 30px;
+}
+
+.collection-name span {
+	font-family: 'Spoqa Han Sans';
+	font-size: 1.4rem;
+	color: #7a7a7a;
+}
+
+.collection p {
+	margin-top: -3px;
+	width: 50rem;
+	line-height: 1.75;
+}
+
+.lookbook {
+	margin-top: 3.3rem;
+	flex-direction: column;
+	margin-bottom: 6rem;
+}
+
+.lookbook::before {
+	content: '/';
+	font-size: 7rem;
+	font-weight: 200;
+	color: #e5e5e5;
+	padding-bottom: 33px;
+}
+
+.lookbook p {
+	width: 42rem;
+}
+
+.lookbook img {
+	margin-top: 3rem;
+}
+
+.red-slogan {
+	width: 640px;
+	height: 190px;
+	background: #d61e39;
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 2.5rem;
+	position: relative;
+}
+
+.red-slogan::before {
+	content: '';
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
+	background: #fff;
+}
+
+.caution {
+	flex-direction: column;
+	width: 640px;
+}
+
+.product-caution li,
+.guide li {
+	list-style: none;
+	font-size: 1.4rem;
+}
+
+.product-detail-info {
+	width: 640px;
+	margin-top: 43px;
+}
+
+
+.product-detail-info h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+	font-size: 2rem;
+	color: #5c5c5c;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding-bottom: 6px;
+	/* display: block; */
+	border-bottom: 1px solid #333;
+}
+
+.product-detail-info table {
+	width: 640px;
+	border-spacing: 0;
+}
+.product-detail-info tr {
+	font-size: 1.4rem;
+}
+
+.product-detail-info tr:nth-child(2n) {
+	background: #f6f6f6;
+	}
+
+.product-detail-info th{
+	padding: 5px 89px 5px 0;
+	text-align: left;
+	font-weight: 400;
+}
+
+.product-detail-info td{
+	padding: 5px 0 5px 0;
+	}

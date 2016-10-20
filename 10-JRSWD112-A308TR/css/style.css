@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Spoqa Han Sans';
+	font-weight: 400;
+	letter-spacing: -0.12em;
+	color: #626161;
+	background: #eee;
+}
+
+p {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 8rem;
+	padding-bottom: 12.2rem;
+}
+
+
+/* 읽기는 가능하지만 안보이는 컨텐츠 */
+.readable-hidden {
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+	background: #fff;
+}
+
+
+.product-info {
+	flex-direction: column;
+	padding-bottom: 8.4rem;
+}
+
+.product-info img {
+	padding-bottom: 1.1rem;
+}
+
+.product-number,
+.product-name-en{
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0;
+	color: #3b3b3b;
+	line-height: 1.2;
+}
+
+.product-number {
+	font-size: 1.5rem;
+}
+
+.product-name-en {
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: -0.02em;
+	padding-top: 0.8rem;
+}
+
+.product-name-kr {
+	font-size: 2.4rem;
+	color: #3b3b3b;
+	padding-top: 0.6rem;
+	letter-spacing: -0.13em;
+}
+
+.collection {
+	flex-direction: column;
+	background: #fbfbfb;
+	padding-bottom: 3.2rem;
+}
+
+.collection-name {
+	font-family: 'Flamenco', cursive;
+	font-size: 6rem;
+	text-transform: capitalize;
+	letter-spacing: -0.01em;
+	color: #5c5c5c;
+	/* padding: 0; */
+	padding-top: 3rem;
+}
+
+.collection-name span {
+	font-family: 'Spoqa Han Sans';
+	font-size: 1.4rem;
+	color: #7a7a7a;
+}
+
+.collection p {
+	margin-top: -0.3rem;
+	width: 50rem;
+	line-height: 1.75;
+}
+
+.lookbook {
+	margin-top: 3.3rem;
+	flex-direction: column;
+	margin-bottom: 6rem;
+}
+
+.lookbook::before {
+	content: '/';
+	font-size: 7rem;
+	font-weight: 200;
+	color: #e5e5e5;
+	padding-bottom: 33px;
+}
+
+.lookbook p {
+}
+
+.lookbook img {
+	margin-top: 3rem;
+}
+
+.red-slogan {
+	width: 64rem;
+	height: 16.8rem;
+	background: #d61e39;
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 2.3rem;
+	letter-spacing: 0.04em;
+	position: relative;
+}
+
+.red-slogan::before {
+	content: '';
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
+	background: #fff;
+}
+
+.caution {
+	flex-direction: column;
+	width: 64rem;
+}
+
+.product-caution li,
+.guide li {
+	list-style: none;
+	font-size: 1.4rem;
+}
+
+.product-detail-info {
+	width: 64rem;
+	margin-top: 4.3rem;
+	margin-bottom: 4.8rem;
+}
+
+
+.product-detail-info h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+	font-size: 2rem;
+	color: #5c5c5c;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding-bottom: 0.6rem;
+	/* display: block; */
+	border-bottom: 1px solid #333;
+}
+
+.product-detail-info table {
+	width: 64rem;
+	border-spacing: 0;
+}
+.product-detail-info tr {
+	font-size: 1.4rem;
+}
+
+.product-detail-info tr:nth-child(2n) {
+	background: #f6f6f6;
+	}
+
+.product-detail-info th{
+	padding: 0.5rem 8.5rem 0.5rem 0.5rem;
+	text-align: left;
+	font-weight: 400;
+}
+
+.product-detail-info td{
+	padding: 0.5rem 0 0.5rem 0;
+	}
+
+.product-caution {
+	width: 64rem;
+	text-align: left;
+}
+
+.product-caution ul,
+.guide ul {
+	margin: 3rem 0 0 0;
+	padding: 0;
+}
+
+.product-caution li,
+.guide li {
+	margin-bottom: 0.4rem;
+}
+
+
+.product-caution li::before,
+.guide li::before {
+	content: '-';
+	padding-right: 0.5rem;
+}
+
+.guide {
+	margin-bottom: 8rem;
+}
